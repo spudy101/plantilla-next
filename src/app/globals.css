@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+/*
+  Tokens de diseño. Toda la UI usa estos nombres (bg-brand, text-ink, border-line…),
+  así un rediseño se hace cambiando valores acá y no buscando colores por los componentes.
+*/
+@theme {
+  --color-brand: #4f46e5;
+  --color-brand-strong: #4338ca;
+  --color-ink: #0f172a;
+  --color-ink-soft: #64748b;
+  --color-line: #e2e8f0;
+  --color-surface: #ffffff;
+  --color-canvas: #f8fafc;
+  --color-muted: #f1f5f9;
+  --color-danger: #dc2626;
+  --color-success: #16a34a;
+
+  --font-sans: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-canvas text-ink antialiased;
+  }
+}

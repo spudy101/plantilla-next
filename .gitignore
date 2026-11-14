@@ -1,0 +1,23 @@
+# dependencias
+node_modules/
+
+# next
+.next/
+out/
+next-env.d.ts
+
+# build / cobertura
+build/
+coverage/
+*.tsbuildinfo
+
+# env (solo se versiona el ejemplo)
+.env
+.env.*
+!.env.example
+
+# logs / SO
+*.log
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
